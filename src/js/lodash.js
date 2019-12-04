@@ -1,3 +1,3 @@
-import lodash from 'lodash'
+import lodash from 'lodash';
 
-window._ = lodash
+window._ = lodash;

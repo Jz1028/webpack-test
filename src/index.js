@@ -1,15 +1,25 @@
-//TREE SHAKING  只支持ES Module
-import image from './img/Jz.png'
-import imgLoader from './js/imgLoader'
-import style from './css/index.css'
+import React from 'react';
+import ReactDom from 'react-dom';
 
-let img = new Image()
-img.src = image
-img.classList.add(style.image)
-document.body.appendChild(img)
+function Index() {
+  return (
+<div>index </div>
+  );
+}
 
-imgLoader()
-let arr2 = _.join(['a', 'v', 'b', '****'])
-console.log(arr2)
+function Ass() {
+  return (
+<div>asd </div>
+  );
+}
 
 
+function App() {
+  return (
+<div>
+<Index></Index><Ass></Ass>
+</div>
+  );
+}
+
+ReactDom.render(<App/>, document.querySelector('#root'));

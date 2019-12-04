@@ -1,12 +1,11 @@
-import image from '../img/Jz.png'
+import image from '../img/Jz.png';
 
 function imgLoader() {
-	let img = new Image()
-	img.src = image
-	img.classList.add('image')
-	
-	document.body.appendChild(img)
-	
+  const img = new Image();
+  img.src = image;
+  img.classList.add('image');
+
+  document.body.appendChild(img);
 }
 
-export default imgLoader
+export default imgLoader;
